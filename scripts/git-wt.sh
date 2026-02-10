@@ -8,6 +8,7 @@ usage() {
   echo "git wt init <repo-url>"
   echo "git wt add <folder> [branch] [base]"
   echo "git wt remove <folder>"
+  echo "git wt run <git-command>"
 }
 
 git_bare() {
