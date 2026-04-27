@@ -33,6 +33,7 @@ cmd_init() {
   # this working tree talks to the bare repo)
   echo "gitdir: ./$BARE_NAME" > .git
 
+  git config --replace-all remote.origin.fetch "+refs/heads/:refs/remotes/origin/"
   # now run git commands from repo root (they will follow the .git pointer)
   git fetch origin --prune
 
